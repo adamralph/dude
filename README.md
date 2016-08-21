@@ -2,7 +2,7 @@
 
 # Dude
 
-[![Build status](https://ci.appveyor.com/api/projects/status/acoj907kr0u9f2m7/branch/master?svg=true)](https://ci.appveyor.com/project/adamralph/dude/branch/master)
+[ ![Download](https://api.bintray.com/packages/adamralph/apps/dude/images/download.svg) ](https://bintray.com/adamralph/apps/dude/_latestVersion) [![Build status](https://ci.appveyor.com/api/projects/status/acoj907kr0u9f2m7/branch/master?svg=true)](https://ci.appveyor.com/project/adamralph/dude/branch/master)
 
 Have you ever wanted to get your hands on Microsoft's [C# REPL Command-Line Interface (csi.exe)](https://msdn.microsoft.com/en-us/magazine/mt614271.aspx) without having to install Visual Studio? Dude, look no further!
 
@@ -11,7 +11,7 @@ Have you ever wanted to get your hands on Microsoft's [C# REPL Command-Line Inte
 ### Getting started
 
 1. The Dude requires .NET Framework 4.6 or later.
-2. Download [dude.exe](https://github.com/adamralph/dude/releases/download/stable/dude.exe).
+2. Download [dude.exe](https://bintray.com/adamralph/apps/download_file?file_path=dude.exe).
 3. (Optional) add the folder containing dude.exe to your PATH.
 
 Dude is functionally identical to csi.exe. E.g. `dude.exe` starts a REPL session. `dude.exe hello.csx` runs a C# script. `dude.exe -?` shows help.

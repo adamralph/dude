@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dude.Console", "src\Dude.Console\Dude.Console.csproj", "{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{43B135B4-E780-4F8A-A925-69A756879A40}"
+	ProjectSection(SolutionItems) = preProject
+		src\CommonAssemblyInfo.cs = src\CommonAssemblyInfo.cs
+		src\Dude.ruleset = src\Dude.ruleset
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76EC3F51-02F7-4A1F-BB48-DB5412104BF9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		build.cmd = build.cmd
+		LICENSE = LICENSE
+		README.md = README.md
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{45290834-5471-4D23-9EAE-C51F500A6D05}"
+	ProjectSection(SolutionItems) = preProject
+		tests\DudeTests.ruleset = tests\DudeTests.ruleset
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DudeTests.Acceptance", "tests\DudeTests.Acceptance\DudeTests.Acceptance.csproj", "{92F26A88-BA2C-4F10-8150-AE2B2476A5DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF} = {25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4A37E8D3-21AC-4B28-8602-662F5B7134C8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F26A88-BA2C-4F10-8150-AE2B2476A5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F26A88-BA2C-4F10-8150-AE2B2476A5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F26A88-BA2C-4F10-8150-AE2B2476A5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F26A88-BA2C-4F10-8150-AE2B2476A5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25F7F1E1-CAEE-4328-AF6C-CE5DCAE159FF} = {43B135B4-E780-4F8A-A925-69A756879A40}
+		{92F26A88-BA2C-4F10-8150-AE2B2476A5DA} = {45290834-5471-4D23-9EAE-C51F500A6D05}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Dude Tests Rule Set" Description="Based on Microsoft All Rules" ToolsVersion="12.0">
+  <Include Path="allrules.ruleset" Action="Default" />
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1014" Action="None" />
+    <Rule Id="CA1016" Action="None" />
+    <Rule Id="CA1017" Action="None" />
+    <Rule Id="CA1020" Action="None" />
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA1802" Action="None" />
+    <Rule Id="CA1822" Action="None" />
+    <Rule Id="CA2204" Action="None" />
+    <Rule Id="CA2210" Action="None" />
+  </Rules>
+</RuleSet>

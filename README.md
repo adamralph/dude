@@ -20,7 +20,7 @@ Dude is functionally identical to csi.exe. E.g. `dude.exe` starts a REPL session
 
 Dude, [like csi.exe](https://github.com/dotnet/roslyn/blob/e045283767da82cfd276d020c8a798f78513a1ab/src/Interactive/CsiCore), is a tiny wrapper around various `Microsoft.CodeAnalysis` libraries. The only differences (apart from the name) are:
 
-1. The invocation of the `Microsoft.CodeAnalysis` members that do all the the heavy lifting is via reflection. (Note that this should have negligible performance impact since the reflective calls only represent a small doorway into the code that does all the work.)
+1. The invocation of the `Microsoft.CodeAnalysis` members that do all the the heavy lifting is via reflection since most of them are internal. (Note that this should have negligible performance impact since the reflective calls only represent a small doorway into the code that does all the work.)
 2. All the required assemblies are merged into a single exe using [ILRepack](https://github.com/gluck/il-repack).
 3. The [default response file](https://github.com/dotnet/roslyn/blob/e045283767da82cfd276d020c8a798f78513a1ab/src/Interactive/csi/csi.rsp) is created alongside the exe the first time it is run.
 
